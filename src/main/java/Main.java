@@ -1,13 +1,15 @@
 import com.github.pemistahl.lingua.api.Language;
 import com.github.pemistahl.lingua.api.LanguageDetector;
+import com.github.pemistahl.lingua.api.LanguageDetectorBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-        // Lingua lingua = new Lingua();
+
         List<String> words = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
@@ -30,13 +32,15 @@ public class Main {
 
     }
 
-    private void addWord(List<String> words, String word) {
-        LanguageDetector languageDetector = new LanguageDetector( LanguageDetector(List<>));
-        languageDetector.detectLanguageOf(List<String>words);
+    public void addWord(List<String> words, String word) {
+
+        //LanguageDetector languageDetector = new LanguageDetector();
 
         if(words.size()==10) {
+            System.out.println("Jau suvedėte " + words.size() + " žodžių");
+            System.out.println(LanguageDetectorBuilder.fromAllLanguages());
 
-            return;
+            System.exit(0);
         }
 
         if(words.contains(word)) {
@@ -47,3 +51,4 @@ public class Main {
 
     }
 }
+
