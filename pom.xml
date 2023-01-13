@@ -20,6 +20,12 @@
             <artifactId>lingua</artifactId>
             <version>1.2.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.optimaize.languagedetector</groupId>
+            <artifactId>language-detector</artifactId>
+            <version>0.5</version>
+        </dependency>
     </dependencies>
 
 </project>
