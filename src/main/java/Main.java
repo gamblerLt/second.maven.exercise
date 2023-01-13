@@ -34,11 +34,13 @@ public class Main {
 
     public void addWord(List<String> words, String word) {
 
-        //LanguageDetector languageDetector = new LanguageDetector();
+        LanguageDetector detector = LanguageDetectorBuilder.fromAllLanguages().build();
 
-        if(words.size()==10) {
+        if(words.size()==2) {
             System.out.println("Jau suvedėte " + words.size() + " žodžių");
-            System.out.println(LanguageDetectorBuilder.fromAllLanguages());
+
+            System.out.println(detector.detectLanguageOf(words.get(0)));
+
 
             System.exit(0);
         }
